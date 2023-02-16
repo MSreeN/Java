@@ -4,13 +4,21 @@ interface MyLamb {
   abstract void display();
 }
 
+class Refe{
+  public void call(MyLamb m){
+    m.display();
+  }
+}
+
 class Demo{
   public void method1(){
-    MyLamb ml = () -> {
+    Refe f = new Refe();
+    f.call(() -> {
       System.out.println("hello");
-    };
-    ml.display();
+    });
   }
+    
+  
 }
 
 public class LambdaAsParameter {
