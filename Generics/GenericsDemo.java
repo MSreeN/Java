@@ -47,6 +47,7 @@ public class GenericsDemo<T> {
     //So we typically want an array which will hold any type of object, when we want string it should hold only string objects not other than that, and same with integer. To do that we should use generics and make the class of type generic(<T>). 
     
     // If Integer is specified instead of string then data array will store only objects of type integer.
+    // If we do not specify anything then it will consider generic of type Object(not even mentioning <>).
     GenericsDemo<String> gd = new GenericsDemo<>();
     gd.data[0] = new String("hello");
 

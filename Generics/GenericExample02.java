@@ -25,8 +25,9 @@ class MyArray<T>{
 
 public class GenericExample02 {
   public static void main(String[] args) {
-    MyArray<Integer> ma = new MyArray<>();
+    MyArray ma = new MyArray<>();
     ma.append(10);
+    ma.append("hello");
     ma.display();
   }
 }
