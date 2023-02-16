@@ -49,6 +49,9 @@ public class GenericsDemo<T> {
     // If Integer is specified instead of string then data array will store only objects of type integer.
     GenericsDemo<String> gd = new GenericsDemo<>();
     gd.data[0] = new String("hello");
-    gd.data[1] = Integer.valueOf(10);
+
+    //Below line will throw us an compile time error.
+    
+    // gd.data[1] = Integer.valueOf(10);
   }
 }
