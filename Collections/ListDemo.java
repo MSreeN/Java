@@ -62,6 +62,5 @@ public class ListDemo {
       System.out.println(li.next());
     }
     System.out.println(li1);
-  li1.po
   }
 }
