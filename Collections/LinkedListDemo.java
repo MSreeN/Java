@@ -8,6 +8,7 @@ public class LinkedListDemo {
     placesToVisit.add("hyd");
     placesToVisit.add(0, "bza");
     placesToVisit.addFirst("bangalore");
+    System.out.println(placesToVisit.contains("bangalore"));
     System.out.println(placesToVisit);
   }
 }
