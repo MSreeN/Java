@@ -1,6 +1,8 @@
 package Collections;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 public class LinkedListDemo {
   public static void main(String[] args) {
@@ -8,6 +10,7 @@ public class LinkedListDemo {
     placesToVisit.add("hyd");
     placesToVisit.add(0, "bza");
     placesToVisit.addFirst("bangalore");
+    placesToVisit.addAll(new ArrayList<String>(List.of("hello")));
     System.out.println(placesToVisit.contains("bangalore"));
     System.out.println(placesToVisit);
   }
