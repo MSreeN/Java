@@ -11,6 +11,8 @@ public class LinkedListDemo {
     placesToVisit.add(0, "bza");
     placesToVisit.addFirst("bangalore");
     placesToVisit.addAll(new ArrayList<String>(List.of("hello")));
+    int ind = placesToVisit.indexOf("hello");
+    System.out.println(ind);
     System.out.println(placesToVisit.contains("bangalore"));
     System.out.println(placesToVisit);
   }
