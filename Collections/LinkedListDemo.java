@@ -18,6 +18,7 @@ public class LinkedListDemo {
     while(li.hasNext()){
       System.out.println(li.next());
     }
+    placesToVisit.push("nuz");
     System.out.println(placesToVisit.isEmpty());
     int ind = placesToVisit.indexOf("hello");
     System.out.println(ind);
