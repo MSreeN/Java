@@ -3,6 +3,7 @@ package Collections;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
 public class LinkedListDemo {
   public static void main(String[] args) {
@@ -13,6 +14,10 @@ public class LinkedListDemo {
     placesToVisit.addAll(new ArrayList<String>(List.of("hello")));
     String first  = placesToVisit.element();
     System.out.println(first);
+    ListIterator<String> li = placesToVisit.listIterator();
+    while(li.hasNext()){
+      System.out.println(li.next());
+    }
     System.out.println(placesToVisit.isEmpty());
     int ind = placesToVisit.indexOf("hello");
     System.out.println(ind);
