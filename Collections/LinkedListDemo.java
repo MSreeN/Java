@@ -13,6 +13,7 @@ public class LinkedListDemo {
     placesToVisit.addAll(new ArrayList<String>(List.of("hello")));
     String first  = placesToVisit.element();
     System.out.println(first);
+    System.out.println(placesToVisit.isEmpty());
     int ind = placesToVisit.indexOf("hello");
     System.out.println(ind);
     System.out.println(placesToVisit.contains("bangalore"));
