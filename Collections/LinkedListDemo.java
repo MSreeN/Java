@@ -20,6 +20,7 @@ public class LinkedListDemo {
     }
     placesToVisit.push("nuz");
     placesToVisit.add("elr");
+    placesToVisit.offer("last");
     System.out.println(placesToVisit);
     placesToVisit.remove();
     System.out.println(placesToVisit.isEmpty());
