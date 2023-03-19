@@ -19,6 +19,7 @@ public class LinkedListDemo {
       System.out.println(li.next());
     }
     placesToVisit.push("nuz");
+    placesToVisit.add("elr");
     System.out.println(placesToVisit.isEmpty());
     int ind = placesToVisit.indexOf("hello");
     System.out.println(ind);
