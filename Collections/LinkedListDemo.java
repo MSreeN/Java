@@ -30,5 +30,10 @@ public class LinkedListDemo {
     // System.out.println(placesToVisit);
 
     // list iterator
+    System.out.println(placesToVisit);
+    ListIterator<String> iterator = placesToVisit.listIterator();
+    while(iterator.hasNext()){
+      System.out.println("from --->" + iterator.next() + "to ---->" +iterator.next());
+    }
   }
 }
