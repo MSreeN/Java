@@ -15,25 +15,35 @@ public class LinkedListDemo {
     // String first  = placesToVisit.element();
     // System.out.println(first);
     ListIterator<String> li = placesToVisit.listIterator();
-    while(li.hasNext()){
-      // System.out.println(li.next());
-    }
+    // while(li.hasNext()){
+    //   // System.out.println(li.next());
+    // }
     placesToVisit.push("nuz");
     placesToVisit.add("elr");
     placesToVisit.offer("last");
+    placesToVisit.offer("sm");
+    placesToVisit.offer("aa");
     // System.out.println(placesToVisit);
     placesToVisit.remove();
     // System.out.println(placesToVisit.isEmpty());
     int ind = placesToVisit.indexOf("hello");
-    System.out.println(ind);
+    // System.out.println(ind);
     // System.out.println(placesToVisit.contains("bangalore"));
     // System.out.println(placesToVisit);
 
     // list iterator
     System.out.println(placesToVisit);
-    ListIterator<String> iterator = placesToVisit.listIterator();
+    ListIterator<String> iterator = placesToVisit.listIterator(1);
+    String previousTown = placesToVisit.getFirst();
     while(iterator.hasNext()){
-      System.out.println("from --->" + iterator.next() + "to ---->" +iterator.next());
+      var town = iterator.next();
+      try{
+        System.out.println("from --->" +previousTown + " to ---->" +town);
+        previousTown = town;
+      }
+      catch(Exception e){
+        System.out.println(e);
+      }
     }
   }
 }
