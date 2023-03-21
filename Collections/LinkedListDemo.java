@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
@@ -40,10 +41,12 @@ public class LinkedListDemo {
       try{
         System.out.println("from --->" +previousTown + " to ---->" +town);
         previousTown = town;
+        
       }
       catch(Exception e){
         System.out.println(e);
       }
     }
+    
   }
 }
