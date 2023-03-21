@@ -35,12 +35,20 @@ public class LinkedListChallange {
     LinkedList<Place> placesToVisit = new LinkedList<>();
     Place vijayawada = new Place("vijayawada", 500);
     addPlace(vijayawada, placesToVisit);
+    addPlace(new Place("vijayawada", 500), placesToVisit);
     System.out.println(placesToVisit);
   }
 
   private static void addPlace(Place place, List<Place> list){
     if(list.contains(place)){
+      System.out.println("duplicate record found "+ place);
       return; 
+    }
+    for (Place place2 : list) {
+      if(place.getName().equalsIgnoreCase(place2.getName())){
+        System.out.println("duplicate record found "+ place);
+        return;
+      }
     }
     list.add(place);
   }
