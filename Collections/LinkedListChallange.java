@@ -2,8 +2,9 @@ package Collections;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 
-class Place{
+class Place  {
   private String name;
   private int distance;
   
@@ -25,10 +26,14 @@ class Place{
   }
   @Override
   public String toString() {
-    return "name= " + name + ", distance= " + distance;
+    return "\nname= " + name + ", distance= " + distance;
   }
+
+
   
 }
+
+
 
 public class LinkedListChallange {
   public static void main(String[] args) {
@@ -36,6 +41,10 @@ public class LinkedListChallange {
     Place vijayawada = new Place("vijayawada", 500);
     addPlace(vijayawada, placesToVisit);
     addPlace(new Place("vijayawada", 500), placesToVisit);
+    addPlace(new Place("eluru", 400), placesToVisit);
+    addPlace(new Place("vizag", 4), placesToVisit);
+    addPlace(new Place("bangalore", 1), placesToVisit);
+
     System.out.println(placesToVisit);
   }
 
@@ -47,6 +56,15 @@ public class LinkedListChallange {
     for (Place place2 : list) {
       if(place.getName().equalsIgnoreCase(place2.getName())){
         System.out.println("duplicate record found "+ place);
+        return;
+      }
+    }
+    ListIterator<Place> listIterator = list.listIterator();
+    while(listIterator.hasNext()){
+      Place curPlace = listIterator.next();
+      if(place.getDistance() < curPlace.getDistance()){
+        listIterator.previous();
+        listIterator.add(place);
         return;
       }
     }
