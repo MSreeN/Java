@@ -9,9 +9,12 @@ public class AutoBoxUnboxChallenge {
     System.out.println(bank);
     bank.addTransaction("sree", 1000.0);
     bank.addTransaction("seree", 1000.0);
-    System.out.println(bank);
     bank.printStatement("sree");
     bank.printStatement("sreee");
+    bank.addNewCustomer("mah", 999);
+    bank.printStatement("khy");
+    bank.addTransaction("mah", 456);
+    System.out.println(bank);
   }
 }
 
