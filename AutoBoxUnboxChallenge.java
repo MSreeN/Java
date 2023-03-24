@@ -6,11 +6,12 @@ public class AutoBoxUnboxChallenge {
     System.out.println(customer);
     Bank bank= new Bank("Chase");
     bank.addNewCustomer("sree", 500.0);
-    System.out.println(bank);
     bank.addTransaction("sree", 1000.0);
     bank.addTransaction("seree", 1000.0);
     bank.printStatement("sree");
     bank.printStatement("sreee");
+    bank.addNewCustomer("mah", 432);
+    System.out.println(bank);
   }
 }
 
