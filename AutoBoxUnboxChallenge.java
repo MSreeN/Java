@@ -11,6 +11,7 @@ public class AutoBoxUnboxChallenge {
     bank.printStatement("sree");
     bank.printStatement("sreee");
     bank.addNewCustomer("mah", 432);
+    bank.printStatement("mah");
     System.out.println(bank);
   }
 }
