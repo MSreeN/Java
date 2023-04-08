@@ -12,7 +12,7 @@ public class Theatre {
     int lastRow = 'A'+ (numRows - 1);
     for(char row = 'A'; row <= lastRow; row++){
       for(int seatNum = 1; seatNum <= seatsPerRow; seatNum++){
-        Seat seat = new Seat(row + String.format ("%02d ",seatNum));
+        Seat seat = new Seat(row + String.format("%02d", seatNum));
         seats.add(seat);
       }
     }
@@ -34,6 +34,7 @@ public class Theatre {
       return false;
     }
     else{
+      
       return requestedSeat.reserve();
     }
   }
@@ -59,10 +60,12 @@ class Seat{
   public boolean reserve(){
     if(!this.reserved){
       this.reserved = true;
+      System.out.println("Please Pay");
       System.out.println("Seat " +seatNumber+ " reserved");
       return true;
     }
     else{
+      System.out.println("Seat is already taken");
       return false;
     }
   }

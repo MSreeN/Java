@@ -1,0 +1,502 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Java",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": true,
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+      "classpath": [".", "${fileDirname}"],
+      "stepFilters": {
+        "skipClasses": ["$JDK", "junit.*"],
+        "skipSynthetics": false,
+        "skipStaticInitializers": false,
+        "skipConstructors": false
+      }
+    },
+    {
+      "name": "Java Console App",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": true,
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+      "classpath": [".", "${fileDirname}"],
+      "externalConsole": true
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}",
+      "stepFilters": {
+        "skipClasses": ["$JDK", "junit.*"],
+        "skipSynthetics": false,
+        "skipStaticInitializers": false,
+        "skipConstructors": false
+      }
+    },
+    {
+      "type": "java",
+      "name": "AbstractCLass",
+      "request": "launch",
+      "mainClass": "AbstractCLass",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Amstrong",
+      "request": "launch",
+      "mainClass": "Amstrong",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "AnnonymousInnerCls",
+      "request": "launch",
+      "mainClass": "AnnonymousInnerCls",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Arithmeticop",
+      "request": "launch",
+      "mainClass": "Arithmeticop",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Arrays",
+      "request": "launch",
+      "mainClass": "Arrays",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "AutoBoxUnboxChallenge",
+      "request": "launch",
+      "mainClass": "AutoBoxUnboxChallenge",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "AutoomaticRollnumber",
+      "request": "launch",
+      "mainClass": "AutoomaticRollnumber",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Bar",
+      "request": "launch",
+      "mainClass": "Bar",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "CheckedExc",
+      "request": "launch",
+      "mainClass": "CheckedExc",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "ArrayDequeDemo",
+      "request": "launch",
+      "mainClass": "Collections.ArrayDequeDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "HashSetDemo",
+      "request": "launch",
+      "mainClass": "Collections.HashSetDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "LinkedListChallange",
+      "request": "launch",
+      "mainClass": "Collections.LinkedListChallange",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "LinkedListDemo",
+      "request": "launch",
+      "mainClass": "Collections.LinkedListDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "ListDemo",
+      "request": "launch",
+      "mainClass": "Collections.ListDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Collections.Main",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "PriorityQueueDemo",
+      "request": "launch",
+      "mainClass": "Collections.PriorityQueueDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "TreeMapDemo",
+      "request": "launch",
+      "mainClass": "Collections.TreeMapDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "TreeSetDemo",
+      "request": "launch",
+      "mainClass": "Collections.TreeSetDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "DaemonThread",
+      "request": "launch",
+      "mainClass": "DaemonThread",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "DataHiding",
+      "request": "launch",
+      "mainClass": "DataHiding",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "DoSelect",
+      "request": "launch",
+      "mainClass": "DoSelect",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "EnumDemo",
+      "request": "launch",
+      "mainClass": "Enum.EnumDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "EnumClass",
+      "request": "launch",
+      "mainClass": "EnumClass",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "FloatWrapper",
+      "request": "launch",
+      "mainClass": "FloatWrapper",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Generics",
+      "request": "launch",
+      "mainClass": "Generics",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "GenericExample01",
+      "request": "launch",
+      "mainClass": "Generics.GenericExample01",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "GenericExample02",
+      "request": "launch",
+      "mainClass": "Generics.GenericExample02",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "GenericMethods",
+      "request": "launch",
+      "mainClass": "Generics.GenericMethods",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "GenericSubClasses",
+      "request": "launch",
+      "mainClass": "Generics.GenericSubClasses",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "GenericsDemo",
+      "request": "launch",
+      "mainClass": "Generics.GenericsDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "GenericsRough",
+      "request": "launch",
+      "mainClass": "GenericsRough",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Inheritace",
+      "request": "launch",
+      "mainClass": "Inheritace",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "IntegerWrapper",
+      "request": "launch",
+      "mainClass": "IntegerWrapper",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "InterThreadComm",
+      "request": "launch",
+      "mainClass": "InterThreadComm",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "InterruptClass",
+      "request": "launch",
+      "mainClass": "InterruptClass",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Lambda",
+      "request": "launch",
+      "mainClass": "Lambda",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "LambdaAsParameter",
+      "request": "launch",
+      "mainClass": "Lambda.LambdaAsParameter",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "LimitingNoOfObjectsSingleton",
+      "request": "launch",
+      "mainClass": "LimitingNoOfObjectsSingleton",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "ListDemo(1)",
+      "request": "launch",
+      "mainClass": "ListDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "MathClass",
+      "request": "launch",
+      "mainClass": "MathClass",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "MethodReference",
+      "request": "launch",
+      "mainClass": "MethodReference",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Methods",
+      "request": "launch",
+      "mainClass": "Methods",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "MonnitorWsync",
+      "request": "launch",
+      "mainClass": "MonnitorWsync",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "ObjectCls",
+      "request": "launch",
+      "mainClass": "ObjectCls",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Overriding",
+      "request": "launch",
+      "mainClass": "Overriding",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Patterns",
+      "request": "launch",
+      "mainClass": "Patterns",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Prameterized_method",
+      "request": "launch",
+      "mainClass": "Prameterized_method",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "RegExpChall",
+      "request": "launch",
+      "mainClass": "RegExpChall",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "RegularExpression",
+      "request": "launch",
+      "mainClass": "RegularExpression",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "SingletonClass",
+      "request": "launch",
+      "mainClass": "SingletonClass",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Source",
+      "request": "launch",
+      "mainClass": "Source",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "StackCLassException",
+      "request": "launch",
+      "mainClass": "StackCLassException",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Static",
+      "request": "launch",
+      "mainClass": "Static",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "StaticInnerClass",
+      "request": "launch",
+      "mainClass": "StaticInnerClass",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "StringBufferClass",
+      "request": "launch",
+      "mainClass": "StringBufferClass",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "StringMethods",
+      "request": "launch",
+      "mainClass": "StringMethods",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "StringMethoodsChallenge",
+      "request": "launch",
+      "mainClass": "StringMethoodsChallenge",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "StuTeacherMonitor",
+      "request": "launch",
+      "mainClass": "StuTeacherMonitor",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "SwitchDemo",
+      "request": "launch",
+      "mainClass": "SwitchDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "Test",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "ThrowThrows",
+      "request": "launch",
+      "mainClass": "ThrowThrows",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "TryWithResources",
+      "request": "launch",
+      "mainClass": "TryWithResources",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "VariableArgs",
+      "request": "launch",
+      "mainClass": "VariableArgs",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "Wrapper",
+      "request": "launch",
+      "mainClass": "Wrapper",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "YieldThread",
+      "request": "launch",
+      "mainClass": "YieldThread",
+      "projectName": "Java_6cc5d1d5"
+    }
+  ]
+}
