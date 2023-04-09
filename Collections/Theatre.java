@@ -45,12 +45,17 @@ public class Theatre {
   }
 }
 
-class Seat{
+class Seat implements Comparable<Seat>{
   private final String seatNumber;
   private boolean reserved = false;
   
   public Seat(String seatNumber){
     this.seatNumber = seatNumber;
+  }
+
+  //Overriding compareTo method of Comparable interface 
+  public int compareTo(Seat seat){
+    return 0;
   }
 
   public String getSeatNumber() {
