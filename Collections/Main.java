@@ -9,5 +9,6 @@ public class Main {
     theatre.reserveSeat("A01");
     theatre.reserveSeat("A01");
     theatre.getTheatreName();
+    theatre.reserveSeat("D04");
   }
 }
