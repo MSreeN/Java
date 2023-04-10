@@ -18,8 +18,8 @@ public class Theatre {
     }
 
   }
-  public String getTheatreName() {
-    return theatreName;
+  public void getTheatreName() {
+    System.out.println(this.theatreName);
   }
   public boolean reserveSeat(String seatNum){
     Seat requestedSeat = null;
