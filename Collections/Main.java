@@ -12,5 +12,6 @@ public class Main {
     theatre.reserveSeat("D04");
     theatre.reserveSeat("D04");
     theatre.reserveSeat("B05");
+    theatre.reserveSeat("b07");
   }
 }
