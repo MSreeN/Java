@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Theatre {
@@ -22,21 +23,29 @@ public class Theatre {
     System.out.println(this.theatreName);
   }
   public boolean reserveSeat(String seatNum){
-    Seat requestedSeat = null;
-    for(Seat seat: seats){
-      if(seat.getSeatNumber().equals(seatNum)){
-        requestedSeat = seat;
-        break;
-      } 
+    Seat requestedSeat = new Seat(seatNum);
+    int foundSeat = Collections.binarySearch(seats, requestedSeat, null);
+    if(foundSeat >= 0){
+      return seats.get(foundSeat).reserve();
     }
-    if(requestedSeat == null){
+    else{
       System.out.println("There is no seat "+ seatNum);
       return false;
     }
-    else{
+    // for(Seat seat: seats){
+    //   if(seat.getSeatNumber().equals(seatNum)){
+    //     requestedSeat = seat;
+    //     break;
+    //   } 
+    // }
+    // if(requestedSeat == null){
+    //   System.out.println("There is no seat "+ seatNum);
+    //   return false;
+    // }
+    // else{
       
-      return requestedSeat.reserve();
-    }
+    //   return requestedSeat.reserve();
+    // }
   }
   public void getSeats(){
     for(Seat seat : seats){
@@ -55,7 +64,7 @@ class Seat implements Comparable<Seat>{
 
   //Overriding compareTo method of Comparable interface 
   public int compareTo(Seat seat){
-    return 0;
+    return this.getSeatNumber().compareTo(seat.getSeatNumber());
   }
 
   public String getSeatNumber() {
@@ -65,7 +74,7 @@ class Seat implements Comparable<Seat>{
   public boolean reserve(){
     if(!this.reserved){
       this.reserved = true;
-      System.out.println("Please Pay");
+      System.out.println("Please `");
       System.out.println("Seat " +seatNumber+ " reserved");
       return true;
     }
