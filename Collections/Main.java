@@ -16,11 +16,13 @@ public class Main {
     // theatre.reserveSeat("B05");
     // theatre.reserveSeat("B07");
     // theatre.reserveSeat("B05");
+    printList(theatre.seats);
+    
   }
 
   public static void printList(List<Theatre.Seat> list){
     for(Theatre.Seat seat : list){
-      System.out.println(seat);
+      System.out.print(" "+ seat.getSeatNumber());
     }
   }
 }
