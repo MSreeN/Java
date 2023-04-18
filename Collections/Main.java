@@ -23,6 +23,7 @@ public class Main {
     //shallow copy of seats in theatre class, references in the seatCopy point to same objects that references in the seats point to.
     List<Theatre.Seat> seatCopy = new ArrayList<>(theatre.seats);
     // printList(seatCopy);
+    //we reserved the A02(index 2) element in seatCopy list and then we checked for the same element but in the theatre.seats list if it is reserved or not, since we using shallow copy here, if we reserve in any one of the list it will affect the both lists.
     seatCopy.get(1).reserve();
     if(theatre.reserveSeat("A02")){
       System.out.println("Please Pay");
