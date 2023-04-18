@@ -1,6 +1,8 @@
 package Collections;
 
+import java.rmi.server.SocketSecurityException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -31,6 +33,9 @@ public class Main {
     else{
       System.out.println("Seat already reserved");
     }
+    //reverses the collection
+    Collections.reverse(seatCopy);
+    printList(seatCopy);
   }
 
   public static void printList(List<Theatre.Seat> list){
