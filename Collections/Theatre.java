@@ -73,7 +73,7 @@ public class Theatre {
     public boolean reserve(){
       if(!this.reserved){
         this.reserved = true;
-        System.out.println("Please `");
+        System.out.println("Please pay");
         System.out.println("Seat " +seatNumber+ " reserved");
         return true;
       }
