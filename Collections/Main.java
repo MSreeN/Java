@@ -1,6 +1,5 @@
 package Collections;
 
-import java.rmi.server.SocketSecurityException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -15,7 +14,7 @@ public class Main {
     // theatre.reserveSeat("A01");
     // theatre.getTheatreName();
     // theatre.reserveSeat("D04");
-    // theatre.reserveSeat("D04");
+    // theatre.reserveSeat("D04"); 
     // theatre.reserveSeat("B05");
     // theatre.reserveSeat("B07");
     // theatre.reserveSeat("B05");
@@ -34,7 +33,10 @@ public class Main {
       System.out.println("Seat already reserved");
     }
     //reverses the collection
-    Collections.reverse(seatCopy);
+    // Collections.reverse(seatCopy);
+
+    //shuffling the collection
+    Collections.shuffle(seatCopy);
     printList(seatCopy);
   }
 
