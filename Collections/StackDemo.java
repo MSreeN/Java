@@ -12,5 +12,6 @@ public class StackDemo {
     s.add(23);
 
     System.out.println(s.get(0));
+    System.out.println(s.hashCode());
   }
 }
