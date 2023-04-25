@@ -1,5 +1,5 @@
 package Lambda;
-//This code is not working , throwing NoSuchMethodError exception, run the in onlineGDBa and worked fine
+//This code is not working , throwing NoSuchMethodError exception, run in onlineGDBa and worked fine
 interface MyLamb {
   abstract void display();
 }
@@ -17,8 +17,6 @@ class Demo{
       System.out.println("hello");
     });
   }
-    
-  
 }
 
 public class LambdaAsParameter {

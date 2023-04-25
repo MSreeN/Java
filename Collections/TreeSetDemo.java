@@ -1,8 +1,7 @@
 package Collections;
 
+import java.util.Comparator;
 import java.util.Iterator;
-import java.util.List;
-import java.util.ListIterator;
 import java.util.TreeSet;
 
 class Point implements Comparable{
@@ -37,6 +36,8 @@ class Point implements Comparable{
 public class TreeSetDemo {
   public static void main(String[] args) {
     TreeSet<Point> ts = new TreeSet<>();
+    ts.add(new Point(8, 8));
+    ts.add(new Point(0, 0));
     ts.add(new Point(5,6));
     ts.add(new Point(1, 8));
     ts.add(new Point(9, 0));
@@ -44,7 +45,8 @@ public class TreeSetDemo {
     // System.out.println(ts);
     Iterator<Point> li = ts.iterator();
     while(li.hasNext()){
-      System.out.println(li.next());
+      Point p = li.next();
+      System.out.println(p.x + " " + p.y);
     }
   }
 

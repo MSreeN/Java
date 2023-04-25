@@ -29,7 +29,6 @@ public class MyLambda {
       (s) ->{
         System.out.println("overridden withe inner class " + s);
       };
-    
     ml.display("param");
   }
 }

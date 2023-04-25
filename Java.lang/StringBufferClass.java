@@ -3,9 +3,9 @@ public class StringBufferClass {
   public static void main(String[] args) {
     StringBuf s = new StringBuf();
     Modifier1 m1 = new Modifier1("Modifier1", s);
-    Modifier2 m2 = new Modifier2("modifier2", s);
-    m1.start();
+    Modifier2 m2 = new Modifier2("Modifier2", s);
     m2.start();
+    m1.start();
   }
 
 }
@@ -13,7 +13,7 @@ public class StringBufferClass {
 class StringBuf {
   StringBuilder s = new StringBuilder("hello");
 
-  public void change(String str) {
+   public void change(String str) {
     try{
       Thread.sleep(2000);
          }
@@ -21,7 +21,7 @@ class StringBuf {
       System.out.println(e);
     }
     
-    s.append(str);
+    System.out.println(s.append(str));
   }
 
   // public void inserting(String str) {
@@ -40,9 +40,9 @@ class Modifier1 extends Thread {
 
   public void run() {
     
-    sb.change(str); 
+    sb.change(str);
     
-    System.out.println(sb.s);
+    
   }
 }
 
@@ -57,6 +57,6 @@ class Modifier2 extends Thread {
 
   public void run() {
     sb.change(str);
-    System.out.println(sb.s);
+    // System.out.println(sb.s);
   }
 }

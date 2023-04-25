@@ -14,6 +14,7 @@ class Data<T>{
 }
 
 
+
 public class GenericExample01 {
   public static void main(String[] args) {
     Data<Integer> d = new Data();
