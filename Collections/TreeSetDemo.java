@@ -43,10 +43,22 @@ public class TreeSetDemo {
     ts.add(new Point(9, 0));
     ts.add(new Point(0, 9));
     // System.out.println(ts);
-    Iterator<Point> li = ts.iterator();
-    while(li.hasNext()){
-      Point p = li.next();
-      System.out.println(p.x + " " + p.y);
+    // Iterator<Point> li = ts.iterator();
+    // while(li.hasNext()){
+    //   Point p = li.next();
+    //   System.out.println(p.x + " " + p.y);
+    // }
+
+    TreeSet<Integer> intTs = new TreeSet<>(Comparator.reverseOrder());
+    intTs.add(5);
+    intTs.add(65);
+    intTs.add(44);
+    intTs.add(3);
+    intTs.add(6);
+
+    Iterator<Integer> itr = intTs.iterator();
+    while(itr.hasNext()){
+      System.out.println(itr.next());
     }
   }
 
