@@ -1,5 +1,6 @@
 package Collections;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeSet;
@@ -48,7 +49,6 @@ public class TreeSetDemo {
     //   Point p = li.next();
     //   System.out.println(p.x + " " + p.y);
     // }
-
     TreeSet<Integer> intTs = new TreeSet<>(Comparator.reverseOrder());
     intTs.add(5);
     intTs.add(65);
@@ -56,10 +56,18 @@ public class TreeSetDemo {
     intTs.add(3);
     intTs.add(6);
 
-    Iterator<Integer> itr = intTs.iterator();
-    while(itr.hasNext()){
-      System.out.println(itr.next());
-    }
+    // Iterator<Integer> itr = intTs.iterator();
+    // while(itr.hasNext()){
+    //   System.out.println(itr.next());
+    
+    TreeSet<String> tst = new TreeSet<>(new SortEle());
+    tst.add("b");
+    tst.add("a");
+    tst.add("d");
+    tst.add("c");
+
+    System.out.println(tst);
+
   }
 
 }
