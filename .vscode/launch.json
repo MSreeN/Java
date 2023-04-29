@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "PriorityQueueDemo",
+      "request": "launch",
+      "mainClass": "Collections.Queue.PriorityQueueDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "QueueDemo",
+      "request": "launch",
+      "mainClass": "Collections.Queue.QueueDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
       "name": "InterfaceObj",
       "request": "launch",
       "mainClass": "Lambda.InterfaceObj",

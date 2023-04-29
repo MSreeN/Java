@@ -1,6 +1,5 @@
 package Collections;
 
-import java.util.Comparator;
 
 public class SortEle implements Comparable<Object>{
     String s1;
