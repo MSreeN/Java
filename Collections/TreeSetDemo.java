@@ -60,13 +60,15 @@ public class TreeSetDemo {
     // while(itr.hasNext()){
     //   System.out.println(itr.next());
     
-    TreeSet<String> tst = new TreeSet<>(new SortEle());
-    tst.add("b");
-    tst.add("a");
-    tst.add("d");
-    tst.add("c");
-
-    System.out.println(tst);
+    TreeSet<SortEle> tst = new TreeSet<>();
+    tst.add(new SortEle("a"));
+    tst.add(new SortEle("b"));
+    tst.add(new SortEle("d"));
+    tst.add(new SortEle("c"));
+    Iterator li = tst.iterator();
+    while(li.hasNext()){
+      System.out.println(li.next().toString());
+    }
 
   }
 
