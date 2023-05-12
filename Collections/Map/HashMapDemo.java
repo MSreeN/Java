@@ -14,7 +14,7 @@ class Temp{
 }
 
 public class HashMapDemo {
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException{
     Map map = new HashMap();
     map.put("Bio", 99);
     map.put("English", 90);
@@ -32,6 +32,7 @@ public class HashMapDemo {
     System.gc();
     System.out.println("--------------");
     System.out.println(map);
-
+    Thread.sleep(3000);
+    System.out.println(map);
   }
 }
