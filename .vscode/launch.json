@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "IdentityHashMapDemo",
+      "request": "launch",
+      "mainClass": "Collections.Map.IdentityHashMapDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
       "name": "LinkedHashMapDemo",
       "request": "launch",
       "mainClass": "Collections.Map.LinkedHashMapDemo",
