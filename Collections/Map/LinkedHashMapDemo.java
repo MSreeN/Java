@@ -10,6 +10,7 @@ public class LinkedHashMapDemo {
     hashMap.put("b", 2);
     hashMap.put("c", 3);
     hashMap.put("d", 4);
+    System.out.println(hashMap.values());
     System.out.println(hashMap);
   }
 }
