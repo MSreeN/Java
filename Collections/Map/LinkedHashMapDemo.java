@@ -11,8 +11,8 @@ class Temp{
 
 
 public class LinkedHashMapDemo {
-  public static void main(String[] args) {
-    HashMap hashMap = new LinkedHashMap<>();
+  public static void main(String[] args) throws InterruptedException {
+    LinkedHashMap hashMap = new LinkedHashMap<>();
     hashMap.put("a", 1);
     hashMap.put("b", 2);
     hashMap.put("c", 3);
@@ -22,6 +22,8 @@ public class LinkedHashMapDemo {
     Temp t = new Temp();
     hashMap.put(t, t.hashCode());
     t = null;
+    System.out.println(hashMap);
+    Thread.sleep(3000);
     System.out.println(hashMap);
   }
 }
