@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SortedMapDemo",
+      "request": "launch",
+      "mainClass": "Collections.Map.SortedMapDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "WeakHashMapDemo",
+      "request": "launch",
+      "mainClass": "Collections.Map.WeakHashMapDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
       "name": "IdentityHashMapDemo",
       "request": "launch",
       "mainClass": "Collections.Map.IdentityHashMapDemo",

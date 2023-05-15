@@ -7,6 +7,10 @@ class Temp{
   public String toString(){
     return "Temp";
   }
+
+  public void finalize(){
+    System.out.println("final method called");
+  }
 }
 
 
@@ -22,6 +26,7 @@ public class LinkedHashMapDemo {
     Temp t = new Temp();
     hashMap.put(t, t.hashCode());
     t = null;
+    System.gc();
     System.out.println(hashMap);
     Thread.sleep(3000);
     System.out.println(hashMap);
