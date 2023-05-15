@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 public class SortedMapDemo {
   public static void main(String[] args) {
-    SortedMap sortedMap = new TreeMap<>();
+    SortedMap sortedMap = new TreeMap<>(Comparator.reverseOrder());
     sortedMap.put(3, "Hello");
     sortedMap.put(5, "world");
     sortedMap.put(1,"welcome");
