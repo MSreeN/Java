@@ -11,5 +11,6 @@ public class IdentityHashMapDemo {
     identityHashMap.put(10,"one");
     identityHashMap.put(10, "two");
     System.out.println(identityHashMap);
+    
   }
 }

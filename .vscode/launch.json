@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "NavigableMapDemo",
+      "request": "launch",
+      "mainClass": "Collections.NavigableMapDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
       "name": "SortedMapDemo",
       "request": "launch",
       "mainClass": "Collections.Map.SortedMapDemo",
