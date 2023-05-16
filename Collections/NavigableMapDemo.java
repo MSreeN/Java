@@ -17,6 +17,8 @@ public class NavigableMapDemo {
     System.out.println(navigableMap.ceilingKey(6));
     System.out.println(navigableMap.floorKey(6)); 
     System.out.println(navigableMap.floorEntry(6));
-    System.out.println(navigableMap.higherKey(4));
+    System.out.println("higher " +navigableMap.higherKey(8));
+    System.out.println("descending key"+ navigableMap.descendingMap());
+    System.out.println("head map "+ navigableMap.headMap(4, true));
   }
 }
