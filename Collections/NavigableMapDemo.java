@@ -10,8 +10,13 @@ public class NavigableMapDemo {
     navigableMap.put(2, "world");
     navigableMap.put(3, "wel");
     navigableMap.put(4, "come");
+    navigableMap.put(6, "here");
     navigableMap.put(9, "home");
     System.out.println(navigableMap);
     System.out.println(navigableMap.ceilingEntry(6));
+    System.out.println(navigableMap.ceilingKey(6));
+    System.out.println(navigableMap.floorKey(6)); 
+    System.out.println(navigableMap.floorEntry(6));
+    System.out.println(navigableMap.higherKey(4));
   }
 }
