@@ -20,5 +20,8 @@ public class NavigableMapDemo {
     System.out.println("higher " +navigableMap.higherKey(8));
     System.out.println("descending key"+ navigableMap.descendingMap());
     System.out.println("head map "+ navigableMap.headMap(4, true));
+    System.out.println("subMap "+ navigableMap.subMap(2, 4));
+    System.out.println("tail map "+ navigableMap.tailMap(2 ,false));
+    System.out.println("Higher "+ navigableMap.higherKey(4));
   }
 }
