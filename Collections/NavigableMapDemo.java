@@ -22,7 +22,7 @@ public class NavigableMapDemo {
     System.out.println("head map "+ navigableMap.headMap(4, true));
     System.out.println("subMap "+ navigableMap.subMap(2, 4));
     //returns the entries form the specified key, inclusion of the entry of the specified key depends on the boolean value
-    System.out.println("tail map "+ navigableMap.tailMap(2 ,false));
+    System.out.println("tail map "+ navigableMap.tailMap(8,true));
     //returns the  next key that is higher that the specified key
     System.out.println("Higher "+ navigableMap.higherKey(4));
   }
