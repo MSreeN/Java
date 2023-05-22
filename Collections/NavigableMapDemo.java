@@ -12,6 +12,7 @@ public class NavigableMapDemo {
     navigableMap.put(4, "come");
     navigableMap.put(6, "here");
     navigableMap.put(9, "home");
+    navigableMap.put(16, "www");
     System.out.println(navigableMap);
     System.out.println(navigableMap.ceilingEntry(6));
     System.out.println(navigableMap.ceilingKey(6));
@@ -24,6 +25,8 @@ public class NavigableMapDemo {
     //returns the entries form the specified key, inclusion of the entry of the specified key depends on the boolean value
     System.out.println("tail map "+ navigableMap.tailMap(8,true));
     //returns the  next key that is higher that the specified key
-    System.out.println("Higher "+ navigableMap.higherKey(4));
+    System.out.println("Higher "+ navigableMap.higherKey(8));
+    System.out.println("Higher "+ navigableMap.higherKey(11));
+    
   }
 }
