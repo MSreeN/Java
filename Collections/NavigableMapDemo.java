@@ -30,7 +30,5 @@ public class NavigableMapDemo {
     System.out.println("Higher "+ navigableMap.higherKey(11));
     System.out.println("Higher entry"+ navigableMap.higherEntry(9));
     System.out.println("navigable map"+ navigableMap.navigableKeySet());
-
-    
   }
 }
