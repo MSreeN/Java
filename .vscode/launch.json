@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DateDemo",
+      "request": "launch",
+      "mainClass": "DateAndTime.DateDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
+      "name": "DateDemo",
+      "request": "launch",
+      "mainClass": "DateDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
       "name": "TreeMapDemo",
       "request": "launch",
       "mainClass": "Collections.Map.TreeMapDemo",
