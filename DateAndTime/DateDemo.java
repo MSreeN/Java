@@ -17,5 +17,7 @@ public class DateDemo {
     gc.setTimeZone(TimeZone.getTimeZone("America/Los_Angeles"));
     System.out.println(gc.getTimeZone());
     System.out.println(gc.getTimeZone().getID());
+    System.out.println(gc.getWeekYear());
+    
   }
 }
