@@ -18,6 +18,7 @@ public class DateDemo {
     System.out.println(gc.getTimeZone());
     System.out.println(gc.getTimeZone().getID());
     System.out.println(gc.getWeekYear());
-    
+    System.out.println(gc.getWeeksInWeekYear());
+    System.out.println(gc.getMinimalDaysInFirstWeek());
   }
 }
