@@ -9,16 +9,17 @@ public class DateDemo {
   public static void main(String[] args) {
     System.out.println(System.currentTimeMillis()/1000/60/60/24/365);
     Date date = new Date();
+    date.setDate(25);
     System.out.println(date);
-    GregorianCalendar gc =  new GregorianCalendar();
-    System.out.println(gc.isLeapYear(2024));
-    System.out.println(date.getDay());
-    System.out.println(gc.get(Calendar.DAY_OF_WEEK));
-    gc.setTimeZone(TimeZone.getTimeZone("America/Los_Angeles"));
-    System.out.println(gc.getTimeZone());
-    System.out.println(gc.getTimeZone().getID());
-    System.out.println(gc.getWeekYear());
-    System.out.println(gc.getWeeksInWeekYear());
-    System.out.println(gc.getMinimalDaysInFirstWeek());
+    // GregorianCalendar gc =  new GregorianCalendar();
+    // System.out.println(gc.isLeapYear(2024));
+    // System.out.println(date.getDay());
+    // System.out.println(gc.get(Calendar.DAY_OF_WEEK));
+    // gc.setTimeZone(TimeZone.getTimeZone("America/Los_Angeles"));
+    // System.out.println(gc.getTimeZone());
+    // System.out.println(gc.getTimeZone().getID());
+    // System.out.println(gc.getWeekYear());
+    // System.out.println(gc.getWeeksInWeekYear());
+    // System.out.println(gc.getMinimalDaysInFirstWeek());
   }
 }
