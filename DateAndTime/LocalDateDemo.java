@@ -13,7 +13,7 @@ public class LocalDateDemo {
     System.out.println(ld1);
     System.out.println(ld1.getDayOfMonth());
     LocalDate cp = ld1.plusDays(10);
-
     System.out.println(cp);
+    System.out.println(ld.getYear());
   }
 }
