@@ -2,6 +2,7 @@ package DateAndTime;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.time.ZonedDateTime;
 
 public class LocalDateTimeDemo {
@@ -9,13 +10,19 @@ public class LocalDateTimeDemo {
     LocalDateTime ldt = LocalDateTime.now();
     // System.out.println(ldt);
     // System.out.println(ldt.getMonthValue());
-    //ZonedDateTime: contains info about time date and time zone information, offset info
-    //OffsetDateTime: it will ony contain offset info, date , time, no zone info
-    //OffsetTime: just for time
-    //ZoneId: by using this class you can specify the id of particular zone
-    
+    // ZonedDateTime: contains info about time date and time zone information,
+    // offset info
     ZonedDateTime zdt = ZonedDateTime.now();
     System.out.println(zdt);
-    //2023-06-28T18:24:06.238846700+05:30[Asia/Calcutta]
+    // 2023-06-28T18:24:06.238846700+05:30[Asia/Calcutta]
+
+    // OffsetDateTime: it will ony contain offset info, date , time, no zone info
+    OffsetDateTime odt = OffsetDateTime.now();
+    System.out.println("offsetDateTime-----" + odt);
+    
+    // OffsetTime: just for time
+    // ZoneId: by using this class you can specify the id of particular zone
+
+
   }
 }
