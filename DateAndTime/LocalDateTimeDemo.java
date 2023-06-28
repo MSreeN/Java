@@ -1,9 +1,11 @@
 package DateAndTime;
 
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.MonthDay;
 import java.time.OffsetDateTime;
+import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Set;
@@ -42,9 +44,32 @@ public class LocalDateTimeDemo {
 
     // MonthDay: just month and day information
     MonthDay md = MonthDay.now();
-    System.out.println("MOnthDat------"+md);
-    //with atYear method you can add year to that MonthDay object and it returns localDate object
-    LocalDate ld =  md.atYear(2032);
-    System.out.println("LocalDate added to monthDat---"+ld);
+    System.out.println("MOnthDat------" + md);
+    // with atYear method you can add year to that MonthDay object and it returns
+    // localDate object
+    LocalDate ld = md.atYear(2032);
+    System.out.println("isValidYear--" + md.isValidYear(2022));
+    System.out.println("LocalDate added to monthDat---" + ld);
+
+    // YearMonth:this will have only year and month information
+
+    // Year: just year information
+
+    //Period: this represents period of time in terms of no.of days
+    //years,months, days
+    //we have stored 2 years 2 months 10 days in period p and added it to LocalDate ld;
+    Period p = Period.of(2,2,10);
+    System.out.println("Period--"+p.addTo(ld));
+
+    //Duration:related info about duration
+
+    //Instant: information of instant of time, used for capturing time, it is independent of time zone, it follows Greenwich mean time(gmt), if two instant objects are created at same moment they will have same information, they won't take local info.
+    
+
+    //Stores information depending of gmt doesn't depend on local zone
+    Instant i = Instant.now();
+    System.out.println("Instant--"+i);
+    // Period p1 = Period.ofMonths(5);
+    // System.out.println("period on instant--"+ p1.addTo(i));
   }
 }
