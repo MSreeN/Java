@@ -1,8 +1,10 @@
 package DateAndTime;
 
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.MonthDay;
 import java.time.OffsetDateTime;
 import java.time.Period;
@@ -55,20 +57,32 @@ public class LocalDateTimeDemo {
 
     // Year: just year information
 
-    //Period: this represents period of time in terms of no.of days
-    //years,months, days
-    //we have stored 2 years 2 months 10 days in period p and added it to LocalDate ld;
-    Period p = Period.of(2,2,10);
-    System.out.println("Period--"+p.addTo(ld));
+    // Period: this represents period of time in terms of no.of days
+    // years,months, days
+    // we have stored 2 years 2 months 10 days in period p and added it to LocalDate
+    // ld;
+    Period p = Period.of(2, 2, 10);
+    System.out.println("Period--" + p.addTo(ld));
 
-    //Duration:related info about duration
+    LocalDate ld1 = LocalDate.now();
+    LocalDate ld2 = LocalDate.of(2024, 7, 30);
+    // Period.between returns no.of days, months, years between two LocalDate
+    // objects.
+    System.out.println("period between to days--" + Period.between(ld1, ld2));
 
-    //Instant: information of instant of time, used for capturing time, it is independent of time zone, it follows Greenwich mean time(gmt), if two instant objects are created at same moment they will have same information, they won't take local info.
-    
+    // Duration:related info about duration
+    //we can store seconds, minutes , hours in Duration object and can add it to other local date object using addTo method on Duration
+    Duration d = Duration.ofMinutes(5);
+    System.out.println("LocalTime--" + LocalTime.now());
+    System.out.println("Duration added--" + d.addTo(LocalTime.now()));
+    // Instant: information of instant of time, used for capturing time, it is
+    // independent of time zone, it follows Greenwich mean time(gmt), if two instant
+    // objects are created at same moment they will have same information, they
+    // won't take local info.
 
-    //Stores information depending of gmt doesn't depend on local zone
+    // Stores information depending of gmt doesn't depend on local zone
     Instant i = Instant.now();
-    System.out.println("Instant--"+i);
+    System.out.println("Instant--" + i);
     // Period p1 = Period.ofMonths(5);
     // System.out.println("period on instant--"+ p1.addTo(i));
   }
