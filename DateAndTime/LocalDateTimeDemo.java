@@ -87,7 +87,7 @@ public class LocalDateTimeDemo {
 
     // Stores information depending of gmt doesn't depend on local zone
     Instant i = Instant.now();
-    System.out.println("Instant--" + i);
+    System.out.println("Instant--" + i.atZone(ZoneId.of("Asia/Calcutta")));
     // Period p1 = Period.ofMonths(5);
     // System.out.println("period on instant--"+ p1.addTo(i));
   }
