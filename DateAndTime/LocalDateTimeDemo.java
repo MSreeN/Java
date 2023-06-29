@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.MonthDay;
 import java.time.OffsetDateTime;
+import java.time.OffsetTime;
 import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -23,6 +24,7 @@ public class LocalDateTimeDemo {
     Set<String> availableZoneIds = ZoneId.getAvailableZoneIds();
     System.out.println(availableZoneIds);
     System.out.println("ZonedDateTime----" + zdt);
+    System.out.println("ZoneDateTime offset---"+zdt.getOffset());
     // 2023-06-28T18:24:06.238846700+05:30[Asia/Calcutta]
 
     // OffsetDateTime: it will ony contain offset info, date , time, no zone info
@@ -35,7 +37,11 @@ public class LocalDateTimeDemo {
     odt1.withDayOfYear(20);
     System.out.println("offsetDateTime----" + odt1);
 
+
     // OffsetTime: just for time
+
+    OffsetTime offsetTime = OffsetTime.now();
+    System.out.println("OffSetTime--"+offsetTime);
     // ZoneId: by using this class you can specify the id of particular zone
 
     // ZoneId: you can set and get the zone information
@@ -52,7 +58,6 @@ public class LocalDateTimeDemo {
     LocalDate ld = md.atYear(2032);
     System.out.println("isValidYear--" + md.isValidYear(2022));
     System.out.println("LocalDate added to monthDat---" + ld);
-
     // YearMonth:this will have only year and month information
 
     // Year: just year information
