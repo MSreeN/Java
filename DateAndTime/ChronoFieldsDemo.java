@@ -1,6 +1,8 @@
 package DateAndTime;
 
+import java.sql.Date;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.temporal.ChronoField;
 
@@ -14,5 +16,9 @@ public class ChronoFieldsDemo {
     System.out.println("Local Time "+lt);
     System.out.println(lt.get(ChronoField.HOUR_OF_DAY));
     System.out.println(lt.get(ChronoField.AMPM_OF_DAY));
+    java.util.Date date = new java.util.Date();
+    LocalDateTime ldt = LocalDateTime.now();
+    System.out.println(ldt.getDayOfWeek());
+    System.out.println(date);
   }
 }
