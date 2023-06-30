@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ChronoFieldsDemo",
+      "request": "launch",
+      "mainClass": "DateAndTime.ChronoFieldsDemo",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
       "name": "DateTimeFormatterDemo",
       "request": "launch",
       "mainClass": "DateAndTime.DateTimeFormatterDemo",
