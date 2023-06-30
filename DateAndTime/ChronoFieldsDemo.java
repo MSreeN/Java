@@ -10,5 +10,9 @@ public class ChronoFieldsDemo {
     LocalTime lt = LocalTime.now();
     System.out.println("Local Date "+ld);
     System.out.println(ld.get(ChronoField.DAY_OF_WEEK));
+    System.out.println(ld.get(ChronoField.DAY_OF_MONTH));
+    System.out.println("Local Time "+lt);
+    System.out.println(lt.get(ChronoField.HOUR_OF_DAY));
+    System.out.println(lt.get(ChronoField.AMPM_OF_DAY));
   }
 }
