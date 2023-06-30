@@ -70,10 +70,11 @@ public class LocalDateTimeDemo {
     System.out.println("Period--" + p.addTo(ld));
 
     LocalDate ld1 = LocalDate.now();
-    LocalDate ld2 = LocalDate.of(2024, 7, 30);
+    LocalDate ld2 = LocalDate.of(2024, 8, 15);
     // Period.between returns no.of days, months, years between two LocalDate
     // objects.
-    System.out.println("period between to days--" + Period.between(ld1, ld2));
+    Period differenceP = Period.between(ld1, ld2);
+    System.out.println("period between to days--" +differenceP);
 
     // Duration:related info about duration
     //we can store seconds, minutes , hours in Duration object and can add it to other local date object using addTo method on Duration
