@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Database",
+      "request": "launch",
+      "mainClass": "JDBC.Database",
+      "projectName": "Java_6cc5d1d5"
+    },
+    {
+      "type": "java",
       "name": "Challenge",
       "request": "launch",
       "mainClass": "DateAndTime.Challenge",
