@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Database {
+public class DatabaseClass {
   public static void main(String[] args) throws SQLException, ClassNotFoundException {
     Class.forName("org.sqlite.JDBC");
     Connection con = DriverManager.getConnection("jdbc:sqlite:C://sqlite//univ.db");
