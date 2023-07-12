@@ -31,7 +31,11 @@ public class App {
 
         //////////////creation of table///////////////
 
-        statement.executeUpdate("create table Temp(a integer, b integer)");
+        // statement.executeUpdate("create table Temp(a integer, b integer)");
+
+        /////////////dropping table//////////////////
+
+        statement.executeUpdate("drop table Temp");
 
         //////////closing connections////////////////
 
