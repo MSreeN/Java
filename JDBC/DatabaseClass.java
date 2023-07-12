@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class DatabaseClass {
   public static void main(String[] args) throws SQLException, ClassNotFoundException {
@@ -19,5 +20,16 @@ public class DatabaseClass {
       deptName = resultSet.getString("dname");
       System.out.println(deptNo+ "-----"+ deptName);
     }
+
+
+    /////////////Executing dml query/////////////////
+
+    // Class.forName("org.sqlite.JDBC");
+    // Connection connection = DriverManager.getConnection("jdbc:sqlite:C://sqlite//univ.db");
+    // Statement statement = connection.createStatement();
+    // ResultSet resultSet = statement.executeQuery("insert into dept values(60, 'Chem')");
+
+    // statement.close();
+    // connection.close();
   }
 }
