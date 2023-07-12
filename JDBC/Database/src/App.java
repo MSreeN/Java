@@ -18,7 +18,8 @@ public class App {
         Connection connection = DriverManager.getConnection("jdbc:sqlite:C://sqlite//univ.db");
         Statement statement = connection.createStatement();
         // statement.executeUpdate("insert into dept values(50,'Petroleum')");
-        statement.executeUpdate("delete from dept where deptno>50");
+        // statement.executeUpdate("delete from dept where deptno>50");
+        statement.executeUpdate("update dept set dname = 'Chem' where deptno = 50");
 
         //////////closing connections////////////////
 
