@@ -17,7 +17,8 @@ public class App {
         Class.forName("org.sqlite.JDBC");
         Connection connection = DriverManager.getConnection("jdbc:sqlite:C://sqlite//univ.db");
         Statement statement = connection.createStatement();
-        statement.executeUpdate("insert into dept values(50,'Petroleum')");
+        // statement.executeUpdate("insert into dept values(50,'Petroleum')");
+        statement.executeUpdate("delete from dept where deptno>50");
 
         //////////closing connections////////////////
 
