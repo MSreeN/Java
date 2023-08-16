@@ -1,5 +1,7 @@
 package FunctionalInterface;
 
+import data.StudentDataBase;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,12 +14,12 @@ public class FunctionExample {
     private static Function<List<com.learnJava.data.Student>, Map<String, Double>> studentGradeMap = students ->{
         Map<String, Double> studentMap = new HashMap<>();
         students.forEach( student -> {
-            if(PredicateExample.filterByGpa.test(student)) studentMap.put(student.getName(), student.getGpa())
+            if(PredicateExample.filterByGpa.test(student)) studentMap.put(student.getName(), student.getGpa());
         });
         return studentMap;
     };
     public static void main(String[] args) {
 //        System.out.println(upperFunction.andThen(concatFunction).apply("java"));
-
+        FunctionExample.studentGradeMap.apply(StudentDataBase.getAllStudents());
     }
 }
