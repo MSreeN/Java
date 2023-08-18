@@ -12,7 +12,7 @@ public class ConsumerExample {
    private static Consumer<String> andThenTest1 = string -> System.out.println(string.toUpperCase());
    private static Consumer<String> andThenTest2 = string -> System.out.println(string.concat(" second consumer"));
     public static void main(String[] args) {
-        Consumer<String> consumer = (s) -> System.out.println(s.toUpperCase());
+        Consumer<String> consumer = (s) -> s.toUpperCase();
 
 //        consumer.accept("hello");
         Consumer<com.learnJava.data.Student> studentConsumer = (student) -> System.out.println(student.getName());
