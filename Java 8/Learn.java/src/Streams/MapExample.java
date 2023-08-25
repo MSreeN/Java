@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class MapExample {
 
     public static void main(String[] args) {
-        System.out.println(getDistinctActivities());
+        System.out.println(getCountAndSortedActivities());
     }
 
     public static List<String> getNamesList(){
@@ -24,6 +24,13 @@ public class MapExample {
         return StudentDataBase.getAllStudents().stream().flatMap(student -> student.getActivities().stream())
                 .distinct()
                 .collect(Collectors.toList());
+    }
+
+    public static Long getCountAndSortedActivities(){
+        return StudentDataBase.getAllStudents().stream().flatMap(s -> s.getActivities().stream())
+                .distinct()
+                .sorted()
+                .count();
     }
 
 }
