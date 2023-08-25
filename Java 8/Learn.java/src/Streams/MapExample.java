@@ -4,11 +4,12 @@ import data.StudentDataBase;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class MapExample {
 
     public static void main(String[] args) {
-        System.out.println(getCountAndSortedActivities());
+        System.out.println(sortedStudentsList());
     }
 
     public static List<String> getNamesList(){
@@ -32,5 +33,12 @@ public class MapExample {
                 .sorted()
                 .count();
     }
+    public static int compare(com.learnJava.data.Student s1, com.learnJava.data.Student s2){
+        return s1.getGradeLevel() - s2.getGradeLevel();
+    }
 
+
+    public static List<com.learnJava.data.Student> sortedStudentsList(){
+        return StudentDataBase.getAllStudents().stream().map(student -> student).sorted(MapExample::compare).collect(Collectors.toList());
+    }
 }

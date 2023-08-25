@@ -3,8 +3,18 @@ package FunctionalInterface;
 import data.StudentDataBase;
 import com.learnJava.data.Student;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
+
+class Sort implements Comparator<Student>{
+
+    @Override
+    public int compare(Student o1, Student o2) {
+        return o1.getGradeLevel() - o2.getGradeLevel();
+    }
+}
 
 public class ConsumerExample {
    private static Consumer<Student> studentName = student -> System.out.print(student.getName());
@@ -34,5 +44,4 @@ public class ConsumerExample {
         };
         StudentDataBase.getAllStudents().forEach(gradeFilter);
     }
-
 }
