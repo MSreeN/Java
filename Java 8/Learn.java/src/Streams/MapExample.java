@@ -34,7 +34,7 @@ public class MapExample {
                 .count();
     }
     public static int compare(com.learnJava.data.Student s1, com.learnJava.data.Student s2){
-        return s1.getGradeLevel() - s2.getGradeLevel();
+        return -(s1.getGradeLevel() - s2.getGradeLevel());
     }
 
 
