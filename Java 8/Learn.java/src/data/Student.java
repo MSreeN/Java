@@ -52,7 +52,13 @@ public class Student {
         this.gpa = gpa;
     }
 
+    public int getNotebook() {
+        return notebook;
+    }
 
+    public void setNotebook(int notebook) {
+        this.notebook = notebook;
+    }
 
     public List<String> getActivities() {
         return activities;

@@ -12,7 +12,8 @@ public class ReduceExample {
         List<Integer> list = Arrays.asList(1,3, 5, 7);
         List<Character> charList = Arrays.asList('a', 'b', 'C');
 //        System.out.println(multiplication(charList));
-        System.out.println(topStudent());
+//        System.out.println(topStudent());
+        System.out.println(totalNoteBooks());
     }
 
     public static Optional<com.learnJava.data.Student> topStudent(){
@@ -28,5 +29,12 @@ public class ReduceExample {
     public static int multiplication(List<Integer> integerList){
         return integerList.stream().reduce(1, (acc, cVal) -> acc*cVal);
 
+    }
+
+    public static int totalNoteBooks(){
+        return StudentDataBase.getAllStudents().stream()
+                .filter(s -> s.getGradeLevel() >= 3 && s.getGender().equalsIgnoreCase("female"))
+                .map(s -> s.getNotebook())
+                .reduce(0,(acc, cVal) -> acc+cVal);
     }
 }
