@@ -4,14 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
+    private int notebook;
     private String name;
     private int gradeLevel;
     private double gpa;
     private String gender;
     List<String> activities = new ArrayList<>();
 
-    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
+    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int notebook) {
         this.name = name;
+        this.notebook = notebook;
         this.gradeLevel = gradeLevel;
         this.gpa = gpa;
         this.gender = gender;
